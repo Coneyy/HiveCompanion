@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="coneys.com.github.hivecompanion.screens.intro.IntroActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_test_land"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/match_history"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="196dp"
+        android:backgroundTint="@color/mainColor"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Historia meczy"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/high_score"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/mainColor"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Tabela punktów"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_history">
+
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/log_out_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/mainColor"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Wyloguj"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/high_score"
+        app:layout_constraintEnd_toStartOf="@+id/high_score"
+        app:layout_constraintTop_toTopOf="@+id/high_score" />
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:button_background="@drawable/button_shape"
+        app:button_bottom_padding="10dp"
+        app:button_image_disabled="@drawable/ic_play"
+        app:button_image_enabled="@drawable/ic_thumb_up"
+        app:button_image_height="55dp"
+        app:button_image_width="55dp"
+        app:button_left_padding="10dp"
+        app:button_right_padding="10dp"
+        app:button_top_padding="10dp"
+        app:button_trail_drawable="@drawable/shape_button"
+        app:button_trail_enabled="true"
+        app:has_activate_state="true"
+        app:initial_state="disabled"
+        app:inner_text="ROZPOCZNIJ GRĘ"
+        app:inner_text_background="@drawable/shape_rounded"
+        app:inner_text_bottom_padding="8dp"
+        app:inner_text_color="@android:color/white"
+        app:inner_text_size="16sp"
+        app:inner_text_top_padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
